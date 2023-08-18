@@ -1,0 +1,12 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "album": "Scotland",
+      "src": "/img/scotland.jpg",
+      "alt": "Terracotta Army, China",
+      "width": 3,
+      "height": 2
+    }
+  ]
+}
