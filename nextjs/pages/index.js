@@ -8,7 +8,7 @@ import gif from '../public/img/scotland/LandingPage.gif'
 
 const sortsMillGoudy = Sorts_Mill_Goudy({
     subsets: ['latin'],
-    weight: ['400']
+    weight: ['400'],
 })
 
 const animation = {

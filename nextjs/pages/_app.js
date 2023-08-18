@@ -5,7 +5,6 @@ import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 
 const dev = process.env.NODE_ENV !== 'production'
-const url = `https://reinrensen.nl${router.route}`
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
