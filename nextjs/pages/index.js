@@ -1,15 +1,10 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { Sorts_Mill_Goudy } from 'next/font/google'
 import { motion } from "framer-motion";
 
 import gif from '../public/img/scotland/LandingPage.gif'
 
-const sortsMillGoudy = Sorts_Mill_Goudy({
-    subsets: ['latin'],
-    weight: ['400'],
-})
 
 const animation = {
     start: { opacity: 0 },
@@ -49,7 +44,10 @@ export default function LandingPage() {
                 md:flex md:flex-row md:justify-center md:gap-10 md:items-center
             '>
                 <div className='flex-none'>
-                    <Link href={'/'} className={sortsMillGoudy.className}>
+                    <Link
+                        href={'/'}
+                        className="font-['MillGoudy']"
+                    >
                         <div
                             className="
                             flex-none

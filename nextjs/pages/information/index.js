@@ -1,15 +1,8 @@
 "use client"
-
-import { IBM_Plex_Sans } from "next/font/google"
 import { motion } from "framer-motion"
 
 import Layout from '../../components/layout'
 import ContactForm from './contactForm'
-
-const PlexSans = IBM_Plex_Sans({
-    subsets: ['latin'],
-    weight: '400',
-})
 
 const animation = {
     start: { opacity: 0 },
@@ -37,7 +30,7 @@ export default function Contact() {
                 exit="exit"
             >
                 <div
-                    className={PlexSans.className}
+                    className="font-['PlexSans']"
                 >
 
                     <p className="text-black/[.7] text-[13px] tracking-[0.65px] leading-[18px]">

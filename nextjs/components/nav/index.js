@@ -50,8 +50,8 @@ export default function Nav({ setModalOn, modalOn, toggle, setToggle }) {
                         items-end
                         my-5
                 ">
-                <Brand {...{ setToggle, toggle }} />
-                <MenuButtons {...{ setToggle, toggle }} />
+                <Brand {...{ setToggle, toggle, setModalOn}} />
+                <MenuButtons {...{ setToggle, toggle, setModalOn }} />
             </div>
         </div>
 
@@ -66,7 +66,7 @@ export default function Nav({ setModalOn, modalOn, toggle, setToggle }) {
                 mx-10 
             ">
             <div className="flex items-start flex-col gap-10">
-                <Brand {...{ setToggle, toggle }} />
+                <Brand {...{ setToggle, toggle, setModalOn }} />
                 <div>
                     {routes.map(({ href, title }) => {
                         return (

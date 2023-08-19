@@ -6,8 +6,22 @@ const proximaNova = Montserrat({
 })
 export default function Footer() {
     return (<>
-        <div className={proximaNova.className}>
-            <div className="md:hidden pt-10 pb-5 flex flex-col gap-2 text-xs">
+        <div
+            className="
+                flex-none 
+                w-full 
+                mt-auto 
+                self-end 
+                pt-10 pb-5 
+                flex flex-col 
+                gap-2 text-xs
+                
+                md:hidden
+                "
+        >
+            <div
+                className={proximaNova.className}
+            >
                 <div className='flex gap-2'>All rights reserved © gijshegmean</div>
                 {/* <div className='font-bold tracking-wider'>hippocradevs@gmail.com</div> */}
             </div>

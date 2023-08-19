@@ -8,7 +8,7 @@ export default function Modal({ images, selectedImg, modalOn, setModalOn }) {
             onClick={() => setModalOn(!modalOn)}
             className="
                 md:flex md:h-screen md:w-full
-                md:justify-center
+
                 md:px-10
                 md:py-10
             "

@@ -1,17 +1,47 @@
 import Link from "next/link";
-import { Sorts_Mill_Goudy } from 'next/font/google'
+import { usePathname } from 'next/navigation'
 
-const sortsMillGoudy = Sorts_Mill_Goudy({
-    subsets: ['latin'],
-    weight: ['400']
-})
+export default function Brand({ setToggle, setModalOn }) {
+    const pathname = usePathname()
 
-export default function Brand({ setToggle, toggle }) {
     return (<>
-        <Link href={'/'} className={sortsMillGoudy.className}>
-            <div
-                onClick={() => setToggle(false)}
-                className="
+
+        {pathname === "/"
+            ? <Link
+                href='/'
+                className="MillGoudy"
+            >
+                <div
+                    onClick={() => setToggle(false)}
+                    className="
+                        flex-none
+                        motion-safe:transition-all motion-safe:duration-150
+                        font-thin
+                        uppercase
+                        tracking-[.16em]
+
+                        text-[1em]
+                        text-black
+
+                    lg:text-black/[.65]
+                lg:text-[1.2em]
+                
+                hover:text-black
+            "
+                >
+                    Gijs Hegeman
+                </div>
+            </Link>
+            : <Link
+                href='/prints'
+                className="MillGoudy"
+            >
+                <div
+                    onClick={() => {
+                        setToggle(false);
+                        if (pathname != "/information") setModalOn(false)
+                    }}
+                    className="
                     flex-none
                     motion-safe:transition-all motion-safe:duration-150
                     font-thin
@@ -26,9 +56,12 @@ export default function Brand({ setToggle, toggle }) {
                     
                     hover:text-black
                 "
-            >
-                Gijs Hegeman
-            </div>
-        </Link>
+                >
+                    Gijs Hegeman
+                </div>
+            </Link >
+        }
+
+
     </>)
 }

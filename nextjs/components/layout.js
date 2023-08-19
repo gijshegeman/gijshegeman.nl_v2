@@ -15,7 +15,7 @@ export default function Layout({ children, setModalOn, modalOn }) {
             <div
                 className='
                     p-5
-                    flex flex-col 
+                    flex flex-col
                     md:w-screen       
                     md:p-0
                     md:fixed md:h-full
@@ -28,8 +28,9 @@ export default function Layout({ children, setModalOn, modalOn }) {
                     md:px-12
                     md:pb-10
                     md:overflow-y-auto
+                    md:grow
                 '>
-                    {children}
+                    {children}{children.setModalOn}
                 </div>
                 <Footer />
             </div>

@@ -10,3 +10,21 @@ html, body {
     overflow-x: hidden;
     background-color:#ececec;
 }
+
+@font-face {
+  font-family: 'EBGaramond';
+  src: url('./fonts/EB_Garamond/EBGaramond-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PlexSans';
+  src: url('./fonts/PlexSans/IBMPlexSans-Light.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MillGoudy';
+  src: url('./fonts/SortsMillGoudy-Regular.ttf');
+  font-display: swap;
+}

@@ -1,0 +1,11 @@
+remove folder: 
+sudo rm -r -f /path/
+
+Move folder
+sudo mv fromPath/ toPath/
+
+Execute rebuild file:
+--> sudo ./build.sh
+
+## Docker
+Ruimte vrij maken: docker system prune -a -f
