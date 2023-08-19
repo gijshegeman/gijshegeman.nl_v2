@@ -26,16 +26,20 @@ const animation = {
 }
 
 export default function Contact() {
+
     return (
         <Layout >
             <motion.div
-                className={PlexSans.className}
+
                 variants={animation}
                 initial="start"
                 animate="enter"
                 exit="exit"
             >
-                <div >
+                <div
+                    className={PlexSans.className}
+                >
+
                     <p className="text-black/[.7] text-[13px] tracking-[0.65px] leading-[18px]">
                         Gijs Hegeman is a docter, hobby photographer and webdeveloper based in the netherlands.<br />
                         <br />
